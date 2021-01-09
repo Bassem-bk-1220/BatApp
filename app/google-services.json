@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "427681171935",
+    "firebase_url": "https://batapp2-40df6.firebaseio.com",
+    "project_id": "batapp2-40df6",
+    "storage_bucket": "batapp2-40df6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427681171935:android:6db6b6d5ead2de28251c6a",
+        "android_client_info": {
+          "package_name": "com.hb.batapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427681171935-84guh97ihh2qpu4i54jq45gr5s21q6qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrxu7LG4phVeSiF1nZD7wy_01t2KALCBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427681171935-84guh97ihh2qpu4i54jq45gr5s21q6qt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

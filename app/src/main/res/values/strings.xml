@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">BatApp</string>
+    <string name="welcome_to_batapp">Welcome to BatApp</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="address_mail">Address mail</string>
+    <string name="password">password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="connexion_with_facebook">Connexion with facebook</string>
+    <string name="password_not_empty">your password must not be empty</string>
+    <string name="pasword_not_alid">your password must be at least 6 characters</string>
+    <string name="email_not_empty">email must not be empty</string>
+    <string name="email_not_valid">Please enter a correct email</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="full_name">full name</string>
+    <string name="full_name_empty">name must not be empty</string>
+    <string name="full_name_invalid">name must at least be charecters</string>
+    <string name="phone_number">phone number</string>
+    <string name="phone_number_empty">phone number must not be empty</string>
+    <string name="phone_number_invalid">phone number is not valid</string>
+    <string name="code">Code</string>
+    <string name="data_not_saved">Data was not saved successfully</string>
+    <string name="home">Home</string>
+    <string name="map">Map</string>
+
+    <!-- Map fragment  -->
+    <string name="profile">Profile</string>
+    <string name="add_zone">Add Zone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <!-- Map fragment  -->
+
+    <!--key for google maps  -->
+    <string name="API_KEY_MAP">AIzaSyDZ0bgT6v3ITPQ86xvBaEhBv5pdo2X_1kQ</string>
+
+
+
+    <string name="WEATHER_API">abc654aba5209d66b0837461c14af217</string>
+    <string name="no_weather_info">Sorry , there was a problem getting your weather information</string>
+    <string name="open_gps">Open GPS</string>
+    <string name="app_require_permission">This app require your position to access certain features</string>
+    <string name="ok">OK</string>
+    <string name="forget_password">forget password</string>
+    <string name="check_your_credentials">Please check your credentials</string>
+    <string name="facebook">facebook</string>
+    <string name="error_getting_user">error while getting the user</string>
+
+
+</resources>

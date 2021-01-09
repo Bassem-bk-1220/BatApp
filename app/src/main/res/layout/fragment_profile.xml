@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_profile_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_profile_full_name"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <ImageView
+                android:id="@+id/img_profile_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imag"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/guideline_vertical_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/img_change_profile_picture"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/groupe_6"
+                android:translationY="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_profile_user"
+                app:layout_constraintEnd_toEndOf="@+id/img_profile_user"
+                app:layout_constraintStart_toStartOf="@+id/img_profile_user" />
+
+
+            <TextView
+                android:id="@+id/tv_profile_full_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/img_exit"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_30"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Bassem Belkahla" />
+
+            <ImageView
+                android:id="@+id/img_exit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icon_metro_exit"
+                app:layout_constraintEnd_toStartOf="@+id/img_info"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_info_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/img_type_profile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_awesome_user_check"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_30"
+                app:layout_constraintTop_toBottomOf="@id/tv_profile_full_name" />
+
+
+            <TextView
+                android:id="@+id/tv_type_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/img_type_profile"
+                app:layout_constraintTop_toBottomOf="@id/tv_profile_full_name"
+                tools:text="Type Profile" />
+
+            <TextView
+                android:id="@+id/tv_type_profile_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/edittext_backgournd"
+                android:backgroundTint="@color/colorYellow"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/tv_type_profile"
+                app:layout_constraintTop_toBottomOf="@id/tv_profile_full_name"
+                tools:text="SuperBat" />
+
+
+            <ImageView
+                android:id="@+id/img_nb_zone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_material_add_location"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_30"
+                app:layout_constraintTop_toBottomOf="@id/img_type_profile" />
+
+
+            <TextView
+                android:id="@+id/tv_nb_zone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/img_type_profile"
+                app:layout_constraintTop_toBottomOf="@id/img_type_profile"
+                tools:text="Number of Zones : 10" />
+
+
+            <ImageView
+                android:id="@+id/img_batcoin"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/batcoin_04"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_30"
+                app:layout_constraintTop_toBottomOf="@id/img_nb_zone" />
+
+
+            <TextView
+                android:id="@+id/tv_nb_batcoin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/img_type_profile"
+                app:layout_constraintTop_toBottomOf="@id/img_nb_zone"
+                tools:text="BatCoin : 10" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/et_profile_full_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:hint="name_and_first_name"
+            android:background="@drawable/edittext_backgournd"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_profile_email"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10" />
+
+        <EditText
+            android:id="@+id/et_profile_email"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_backgournd"
+            android:hint="@string/address_mail"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/et_profile_address"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_backgournd"
+            android:inputType="textEmailAddress"
+            android:hint="numéro_de_télephone"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+            app:layout_constraintTop_toBottomOf="@+id/et_profile_email" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_backgournd"
+            android:backgroundTint="@color/colorBlack"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_50"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+            app:layout_constraintTop_toBottomOf="@id/et_profile_address" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittext_backgournd"
+            android:backgroundTint="@color/colorYellow"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_50"
+            app:layout_constraintTop_toBottomOf="@id/et_profile_address" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
